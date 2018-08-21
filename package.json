@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "reduxifire": "index.js"
+  },
   "keywords": [
     "git",
     "redux",
@@ -18,6 +21,8 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "fs-extra": "^7.0.0",
-    "path": "^0.12.7"
+    "global": "^4.3.2",
+    "path": "^0.12.7",
+    "reduxifire": "^0.0.0"
   }
 }
