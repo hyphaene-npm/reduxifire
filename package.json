@@ -1,0 +1,23 @@
+{
+  "name": "reduxifire",
+  "version": "0.0.0",
+  "description": "used to generate a boilerplate of redux files inside a redux folder name ( configurable )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "redux",
+    "generator",
+    "boilerplate",
+    "template"
+  ],
+  "author": "Maximilien Garenne <maximilien.garenne@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "fs-extra": "^7.0.0",
+    "path": "^0.12.7"
+  }
+}
