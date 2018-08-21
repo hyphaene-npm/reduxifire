@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 const path = require('path');
-// const fs = require('fs');
 const fs = require('fs-extra');
 
 const REDUX = 'redux';
@@ -19,6 +18,8 @@ const main = () => {
     } catch (err) {
       console.error(err);
     }
+  } else {
+    console.log('folder already exists !');
   }
 };
 

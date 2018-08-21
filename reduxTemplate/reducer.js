@@ -1,14 +1,12 @@
-import { actionTypes } from '../actions/<%- name %>';
 import MyTypes from './types';
 import { MY_ACTION, MY_KEY, MY_OTHER_ACTION, MY_OTHER_KEY } from './constants';
 
-const reducer = (
-  state = {
-    [MY_KEY]: {}
-    [MY_OTHER_KEY]: {}
-  },
-  { type, payload }
-) => {
+const defaultState = {
+  [MY_KEY]: {},
+  [MY_OTHER_KEY]: {}
+};
+
+const reducer = (state = defaultState, { type, payload }) => {
   switch (type) {
     case MyTypes[MY_ACTION]:
       return {
@@ -18,7 +16,7 @@ const reducer = (
     case MyTypes[MY_OTHER_ACTION]:
       return {
         ...state,
-          [MY_OTHER_KEY]: payload
+        [MY_OTHER_KEY]: payload
       };
     default:
       return state;
