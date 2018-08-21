@@ -14,7 +14,7 @@ const main = () => {
   if (!isHere) {
     try {
       fs.copySync(reduxTemplateFolderPath, reduxFolderPath);
-      console.log('success!');
+      console.log('success !');
     } catch (err) {
       console.error(err);
     }
