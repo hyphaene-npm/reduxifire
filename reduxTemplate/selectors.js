@@ -1,4 +1,4 @@
-import { MY_KEY, MY_OTHER_KEY, myReducerKey } from './constants';
+import { MY_KEY, MY_OTHER_KEY, MY_RK } from './constants';
 
-export const getMyKey = state => state[myReducerKey][MY_KEY];
-export const getMyOtherKey = state => state[myReducerKey][MY_OTHER_KEY];
+export const getMyKey = state => state[MY_RK][MY_KEY];
+export const getMyOtherKey = state => state[MY_RK][MY_OTHER_KEY];

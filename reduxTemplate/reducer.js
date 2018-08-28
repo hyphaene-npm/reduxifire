@@ -1,26 +1,21 @@
 import MyTypes from './types';
 import { MY_ACTION, MY_KEY, MY_OTHER_ACTION, MY_OTHER_KEY } from './constants';
+import { reducerBuilder } from 'redux-friends';
 
 const defaultState = {
   [MY_KEY]: {},
   [MY_OTHER_KEY]: {}
 };
 
-const reducer = (state = defaultState, { type, payload }) => {
-  switch (type) {
-    case MyTypes[MY_ACTION]:
-      return {
-        ...state,
-        [MY_KEY]: payload
-      };
-    case MyTypes[MY_OTHER_ACTION]:
-      return {
-        ...state,
-        [MY_OTHER_KEY]: payload
-      };
-    default:
-      return state;
-  }
+const behaviors = {
+  [MyTypes[MY_ACTION]]: (state, { payload }) => ({
+    ...state,
+    [MY_KEY]: payload
+  }),
+  [MyTypes[MY_OTHER_KEY]]: (state, { payload }) => ({
+    ...state,
+    [MY_KEY]: payload
+  })
 };
 
-export default reducer;
+export default reducerBuilder(behaviors, defaultState);

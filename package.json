@@ -23,6 +23,17 @@
     "fs-extra": "^7.0.0",
     "global": "^4.3.2",
     "path": "^0.12.7",
-    "reduxifire": "^0.0.1"
+    "redux-friends": "^0.0.2"
+  },
+  "devDependencies": {
+    "versionifier": "^1.3.4"
+  },
+  "versionifier": {
+    "commitIfOnlyPackageJsonInStage": true,
+    "commitIfMultipleFilesInStage": false,
+    "push": true,
+    "commitMessage": "Updated package.json to version @@",
+    "remoteRepo": "origin",
+    "publish": true
   }
 }
