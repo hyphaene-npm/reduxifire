@@ -1,7 +1,13 @@
+import { getTypes } from 'redux-friends';
+
 export const MY_RK = 'someKey';
 
-export const MY_ACTION = 'MY_ACTION';
-export const MY_OTHER_ACTION = 'MY_OTHER_ACTION';
+export const SET_AAA = 'SET_AAA';
+export const SET_BBB = 'SET_BBB';
 
-export const MY_KEY = 'someKey';
-export const MY_OTHER_KEY = 'someOtherKey';
+export const MY_AAA = 'someAAA';
+export const MY_BBB = 'someBBB';
+
+export const MyTypesArray = [MY_AAA, MY_BBB];
+
+export const TYPES = getTypes(MY_RK, MyTypesArray);

@@ -1,21 +1,14 @@
-import MyTypes from './types';
-import { MY_ACTION, MY_KEY, MY_OTHER_ACTION, MY_OTHER_KEY } from './constants';
+import { SET_AAA, SET_BBB, TYPES, AAA, BBB } from './constants';
 import { reducerBuilder } from 'redux-friends';
 
 const defaultState = {
-  [MY_KEY]: {},
-  [MY_OTHER_KEY]: {}
+	[AAA]: {},
+	[BBB]: {}
 };
 
 const behaviors = {
-  [MyTypes[MY_ACTION]]: (state, { payload }) => ({
-    ...state,
-    [MY_KEY]: payload
-  }),
-  [MyTypes[MY_OTHER_KEY]]: (state, { payload }) => ({
-    ...state,
-    [MY_KEY]: payload
-  })
+	[TYPES[SET_AAA]]: (state, { payload }) => ({ ...state, [AAA]: payload }),
+	[TYPES[SET_BBB]]: (state, { payload }) => ({ ...state, [BBB]: payload })
 };
 
 export default reducerBuilder(behaviors, defaultState);

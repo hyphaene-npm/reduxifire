@@ -1,6 +1,6 @@
-import { setSomeKey, setSomeOtherKey } from './actions';
-import { getMyOtherKey, getMyKey } from './selectors';
-import myReducer from './reducer';
+import { setAAA, setBBB } from './actions';
+import { getAAA, getBBB } from './selectors';
+import Reducer from './reducer';
 import { MY_RK } from './constants';
 
-export { setSomeKey, setSomeOtherKey, getMyKey, getMyOtherKey, myReducer, MY_RK };
+export { setAAA, setBBB, getAAA, getBBB, Reducer, MY_RK };

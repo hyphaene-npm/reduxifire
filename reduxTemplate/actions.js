@@ -1,6 +1,15 @@
-import MyTypes from './types';
-import { MY_ACTION, MY_OTHER_ACTION } from './constants';
+import { SET_AAA, SET_BBB, TYPES } from './constants';
 import { actionBuilder } from 'redux-friends';
+import { dispatch } from 'rxjs/internal/observable/pairs';
 
-export const setSomeKey = actionBuilder(MyTypes[MY_ACTION]);
-export const setSomeOtherKey = actionBuilder(MyTypes[MY_OTHER_ACTION]);
+export const setAAA = actionBuilder(TYPES[SET_AAA]);
+export const setBBB = actionBuilder(TYPES[SET_BBB]);
+
+export const fetchAAA = () => async dispatch => {
+	try {
+		const data = await someASYNCFn();
+		dispatch(setAAA(data));
+	} catch (error) {
+		console.warn(error);
+	}
+};
