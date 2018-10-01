@@ -3,12 +3,12 @@ import { reducerBuilder } from 'redux-friends';
 
 const defaultState = {
 	[AAA]: {},
-	[BBB]: {}
+	[BBB]: {},
 };
 
 const behaviors = {
 	[TYPES[SET_AAA]]: (state, { payload }) => ({ ...state, [AAA]: payload }),
-	[TYPES[SET_BBB]]: (state, { payload }) => ({ ...state, [BBB]: payload })
+	[TYPES[SET_BBB]]: (state, { payload }) => ({ ...state, [BBB]: payload }),
 };
 
 export default reducerBuilder(behaviors, defaultState);
