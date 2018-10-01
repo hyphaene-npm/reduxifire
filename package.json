@@ -1,6 +1,6 @@
 {
     "name": "reduxifire",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "used to generate a boilerplate of redux files inside a redux folder name ( configurable )",
     "main": "index.js",
     "scripts": {
