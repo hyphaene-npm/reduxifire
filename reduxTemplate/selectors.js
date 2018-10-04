@@ -1,4 +1,4 @@
-import { MY_RK, SET_AAA, SET_BBB } from './constants';
+import { MY_RK, AAA, BBB } from './constants';
 
-export const getAAA = state => state[MY_RK][SET_AAA];
-export const getBBB = state => state[MY_RK][SET_BBB];
+export const getAAA = state => state[MY_RK][AAA];
+export const getBBB = state => state[MY_RK][BBB];
