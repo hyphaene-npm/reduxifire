@@ -1,5 +1,5 @@
 import { SET_AAA, SET_BBB, TYPES, AAA, BBB } from './constants';
-import { reducerBuilder } from 'redux-friends';
+import { createReducer } from 'redux-friends';
 
 const defaultState = {
 	[AAA]: {},
@@ -11,4 +11,4 @@ const behaviors = {
 	[TYPES[SET_BBB]]: (state, { payload }) => ({ ...state, [BBB]: payload }),
 };
 
-export default reducerBuilder(behaviors, defaultState);
+export default createReducer(behaviors, defaultState);

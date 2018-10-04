@@ -1,8 +1,8 @@
 import { SET_AAA, SET_BBB, TYPES } from './constants';
-import { actionBuilder } from 'redux-friends';
+import { createAction } from 'redux-friends';
 
-export const setAAA = actionBuilder(TYPES[SET_AAA]);
-export const setBBB = actionBuilder(TYPES[SET_BBB]);
+export const setAAA = createAction(TYPES[SET_AAA]);
+export const setBBB = createAction(TYPES[SET_BBB]);
 
 export const fetchAAA = () => async dispatch => {
 	try {

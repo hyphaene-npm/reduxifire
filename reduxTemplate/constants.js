@@ -1,4 +1,4 @@
-import { getTypes } from 'redux-friends';
+import { createTypes } from 'redux-friends';
 
 export const MY_RK = 'someKey';
 
@@ -10,4 +10,4 @@ export const BBB = 'someBBB';
 
 export const MyTypesArray = [SET_AAA, SET_BBB];
 
-export const TYPES = getTypes(MY_RK, MyTypesArray);
+export const TYPES = createTypes(MY_RK, MyTypesArray);
