@@ -39,7 +39,7 @@
 				"functions": "ignore"
 			}
 		],
-		"no-console": [2, { "allow": ["warn", "error"] }]
+		"no-console": [0]
 	},
 	"env": {
 		"browser": true,

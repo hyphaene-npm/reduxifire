@@ -1,4 +1,4 @@
 import { _RK, CCC, DDD } from './constants';
 
-export const getAAA = state => state[_RK][CCC];
-export const getBBB = state => state[_RK][DDD];
+export const getEEE = state => state[_RK][CCC];
+export const getFFF = state => state[_RK][DDD];
