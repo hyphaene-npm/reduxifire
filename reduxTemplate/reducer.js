@@ -1,15 +1,18 @@
-import { SET_AAA, SET_BBB, TYPES } from './constants';
-import { createReducer, PAGES, DATA } from 'redux-friends';
+import { SET_AAA, SET_BBB, TYPES, CCC, DDD } from './constants';
+import { createReducer, assignPayloadToKey, assignPayloadToState } from 'redux-friends';
 
 const defaultState = {
-	[PAGES]: {},
-	[DATA]: {},
+	[CCC]: {},
+	[DDD]: {},
 };
 
 const behaviors = {
-	[TYPES[SET_AAA]]: (state, { payload }) => ({ ...state, [PAGES]: payload }),
-	[TYPES[SET_BBB]]: (state, { payload }) => ({ ...state, [DATA]: payload }),
-	[TYPES[SET_AAA]]: (state, { payload }) => payload,
+	[TYPES[SET_AAA]]: assignPayloadToKey(CCC),
+	[TYPES[SET_BBB]]: assignPayloadToKey(DDD),
 };
+
+// const behaviors = {
+// 	[TYPES[SET_AAA]]: assignPayloadToState,
+// };
 
 export default createReducer(behaviors, defaultState);
