@@ -1,6 +1,8 @@
 use 
 ====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hyphaene-npm/reduxifire.svg)](https://greenkeeper.io/)
+
 use reduxifire some/path/to/create/redux/folder
 
 * [x] copy files
